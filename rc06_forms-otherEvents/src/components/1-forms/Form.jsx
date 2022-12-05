@@ -2,12 +2,14 @@ import { useState } from "react";
 
 const Form = () => {
   const [username, setUsername] = useState("Mehmett");
+  const [email, setEmail] = useState("");
+  const [Password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(e.target);
     console.log("Submitted");
-    alert(`username: ${username} email:, password:`);
+    alert(`username: ${username} email: ${email} password:${password}`);
   };
 
   const handleUsername = (e) => {
