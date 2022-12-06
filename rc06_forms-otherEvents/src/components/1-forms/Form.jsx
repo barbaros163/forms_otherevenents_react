@@ -10,6 +10,10 @@ const Form = () => {
     console.log(e.target);
     console.log("Submitted");
     alert(`username: ${username} email: ${email} password: ${password}`);
+
+    setUsername("");
+    setEmail("");
+    setPassword("");
   };
 
   const handleUsername = (e) => {
